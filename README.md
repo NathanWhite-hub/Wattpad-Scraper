@@ -26,7 +26,7 @@ I wrote this script for use in collecting data to train ML models, and I am not 
 
 ## In-Depth Explanation
 
-This is an in-depth explanation of what this script does and is not necessary if you are just using it to scrape data. The script starts off with opening the browser context and then opening the links.txt file. It runs the .readlines() method and stores the output list in the variable storylinks.
+This is an in-depth explanation of what this script does and is not necessary if you are just using it to scrape data. The script starts off with opening the browser context and then opening the links.txt file. It runs the readlines() method and stores the output list in the variable storylinks.
 
 It then runs a for loop to cycle through the list of stories and for each story it begins with declaring an empty list known as the variable chapterLinks. It then navigates to the storylink URL and queries all of the <a> tags within the .story-parts class of the DOM (the .story-parts class holds an unordered list of all the chapters).
   
@@ -34,7 +34,7 @@ After querying all of the selectors, it then runs another for loop that appends 
 
 ### The Scraping Process
   
-The script then begins a for loop that navigates to each chapter link in the chapterLink list. On each page, it will query all <p> tag selectors that are contained within the <pre> tag. It then runs a for loop to grab each <p> tag's text content and add/assign it to the text_paragraph variable. While it might look messy, it is necessary to assign the text content to a new variable as the paragraph variable is one of the list elements and has the selector information stored as JNode.
+The script then begins a for loop that navigates to each chapter link in the chapterLink list. On each page, it will query all `<p>` tag selectors that are contained within the ``<pre>`` tag. It then runs a for loop to grab each `<p>` tag's text content and add/assign it to the text_paragraph variable. While it might look messy, it is necessary to assign the text content to a new variable as the paragraph variable is one of the list elements and has the selector information stored as JNode.
 
 After adding all of the text content to the text_paragraph variable, it then opens (or creates) the wattPadExport.txt file within the script's current directory. It then replaces the + sign, keeping a bit of space at the start (so it can differentiate if someone added a + in their story, and replaces it with an empty character.
 

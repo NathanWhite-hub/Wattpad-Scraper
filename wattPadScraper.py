@@ -14,8 +14,6 @@ def run(playwright):
 
         storylinks = cd.readlines()
 
-        print(storylinks)
-
         for storylink in storylinks:
 
             chapterLinks = []

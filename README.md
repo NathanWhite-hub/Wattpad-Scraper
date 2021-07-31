@@ -2,6 +2,8 @@
 
 This is a Python script that extracts the text from stories on Wattpad as well as all chapters within a story.
 
+A special thanks to the developers at https://playwright.dev for their great library.
+
 ## Installation
 
 **1.)** If not already installed, go to https://www.python.org/downloads/ and download the latest version of Python for your OS. Make sure to install pip with the installation (check the box).

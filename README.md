@@ -18,7 +18,7 @@ playwright install
 
 This script reads the text file known as links.txt. A user will paste the links to the stories they wish to scrape (do not post the actual chapters) into the links.txt file, each story separated by a new line. The script will then open a browser window, scan for the chapters, then visit each chapter of the story and scrape the story text content before moving onto the next line (the next link) in the links.txt file and repeating.
 
-All scraped text will be placed in a file called wattPadExport.txt in the directory that the script is in. This script also formats the data to remove the '+' symbol that is exported with it. This symbol is scraped from WattPad, which is the symbol from the quote box and is not a part of the story text content.
+All scraped text will be placed in a file called wattPadExport.txt in the directory that the script is in. This script also formats the data to remove the '+' symbol that is exported with it. This symbol is scraped from WattPad, which is the symbol from the quote box and is not a part of the story text content. Run the .py file to begin the process and watch the script go.
 
 This does not clean the data for use in an AI, and I recommend using other scripts/tools out there for doing so.
 
